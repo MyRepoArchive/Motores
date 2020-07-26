@@ -1,95 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Fredoka+One&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Rationale&display=swap');
-/*
-font-family: 'Black Ops One', cursive;
-font-family: 'Rationale', sans-serif;
-font-family: 'Fredoka One', cursive;
-*/
 body {
     background: whitesmoke;
-    text-align: center;
+    font-family: 'Oswald', Arial, sans-serif;
     margin: 0;
-    font-family: sans-serif;
+    text-align: center;
 }
 
-main {
-    max-width: 800px;
-    display: inline-block;
-    text-align: justify;
-    color: rgb(39, 39, 39);
-    background: white;
-}
+/*Cabecalho*/
 
 header#cabecalho {
-    padding-left: 50px;
-    border: 5px solid rgb(94, 0, 170);
-    border-top: none;
-    border-radius: 5px;
-}
-
-header#cabecalho img {
-    height: 80px;
-}
-
-header#cabecalho hgroup {
-    display: inline-block;
-    vertical-align: 1em;
-    font-family: 'Black Ops One', cursive;
-    
-}
-
-header#cabecalho hgroup h1 {
-    margin-bottom: 0;
-    font-weight: lighter;
-}
-
-header#cabecalho hgroup h2 {
-    margin: 0;
-    font-size: 1em; 
-    font-weight: lighter;
-}
-
-div#corpo {
-    padding: 20px 50px;
-    border: 5px solid rgb(94, 0, 170);
-    border-radius: 5px;
-}
-
-div#corpo figure {
-    text-align: center;
-}
-
-div#corpo figure legend {
-    font-size: 0.8em;
-    color: black;
-}
-
-div#corpo img {
-    width: 60%;
-    max-width: 100%;
-    text-align: center;
-    border-radius: 5px;
-}
-
-div#corpo p {
-    text-indent: 50px;
-}
-
-section#miolo {
-    background: whitesmoke;
-    padding: 0px 50px;
-}
-
-section#miolo h2 {
-    display: inline-block;
-}
-
-section#miolo h3 {
-    float: right;
+    position: fixed;
+    top: 0;
+    padding: 10px 0;
+    background: rgb(30, 30, 30);
     text-align: right;
+    width: 100%;
 }
 
-footer#rodape {
-    text-align: center;
+header#cabecalho img#logo {
+    height: 40px;
+    float: left;
+    margin-left: 10px;
+}
+
+header#cabecalho div#linksCabecalho {margin-right: 10px;}
+
+header#cabecalho div#linksCabecalho a {text-decoration: none; display: inline-block;}
+
+header#cabecalho div#linksCabecalho div {
+    color: #f8f8f8;
+    display: inline-block;
+    margin: 5px;
+    border: 2px solid #f8f8f8;
+    border-radius: 50px;
+    padding: 3px 8px;
+}
+
+header#cabecalho div#linksCabecalho div:hover {
+    transition: 200ms;
+    color: rgb(30, 30, 30);
+    background: #f8f8f8;
+}
+
+/*Conteudo*/
+
+div#conteudo {
+    max-width: 2000px;
+    display: inline-block;
+    text-align: justify;
+    margin-top: 60px;
+    background: white;
+    padding: 10px 50px;
+}
+
+/*Introdução*/
+
+div#conteudo section#introducao {
+    background: white;
 }

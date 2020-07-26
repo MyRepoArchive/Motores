@@ -1,0 +1,90 @@
+body {
+    background: #e1e1e1;
+    margin: 0;
+    color: #f8f8f8;
+}
+
+main {
+    background: url('../image/background.webp') no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-position-y: -35vw;
+    text-align: center;
+}
+
+div#corpo {
+    background: rgba(0, 0, 0, 0.2);
+    min-height: 100vh;
+    padding: 0px 10px;
+}
+
+header {
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+    font-family: 'Gugi', Arial, cursive;
+}
+
+header img {
+    margin-top: 15vw;
+    height: 12em;
+}
+
+header h1 {
+    font-size: 4em;
+    display: inline-block;
+    vertical-align: 1em;
+    margin: 0;
+}
+
+nav#buttons a {text-decoration: none;}
+
+nav#buttons div {
+    display: inline-block;
+    font-family: 'Oswald', Arial, sans-serif;
+    border-radius: 50px;
+    border: 3px solid #f8f8f8;
+    padding: 10px 20px;
+    color: #f8f8f8;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+}
+
+nav#buttons div:hover {
+    transition: 200ms;
+    color: rgba(0,0,0,0.5);
+    background: #f8f8f8;
+}
+
+footer {
+    position: fixed;
+    text-align: right;
+    bottom: 0;
+    right: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer a {
+    color: #f8f8f8;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+/*Parte responsiva do layout da página*/
+
+@media (max-width: 400px) {
+    header img {
+        height: 10em;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 280px) {
+    header img {
+        height: 8em;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
