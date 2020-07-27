@@ -1,9 +1,13 @@
+@media (min-width: 2000px) {
+    aside#multimidia figure iframe {height: 412px;}
+}
+
 @media (max-width: 1000px) {
     aside#multimidia figure iframe {height: calc(28vw - 100px);}
 }
 
 @media (max-width: 750px) {
-    div#conteudo section.parteTexto {
+    div#conteudo div#texto {
         border: none;
         width: 100%;
     }
@@ -11,4 +15,41 @@
     div#conteudo section.parteTexto figure {display: block;}
     
     aside#multimidia {display: none;}
+}
+
+@media (max-width: 650px) {
+    div#conteudo section.parteTexto img.exemplo {
+        width: 150px;
+    }
+}
+
+@media (max-width: 500px) {
+    header#cabecalho div#linksCabecalho div {
+        margin: 9px 5px;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        text-decoration: underline;
+    }
+    
+    header#cabecalho div#linksCabecalho div:hover {
+        transition: 0s;
+        font-weight: bold;
+        color: #f8f8f8;
+        background: none;
+    }
+
+    div#conteudo section.parteTexto {
+        padding: 50px 20px;
+    }
+
+    div#conteudo section.parteTexto figure img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 300px) {
+    div#conteudo {
+        margin-top: 90px;
+    }
 }

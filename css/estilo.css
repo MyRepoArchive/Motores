@@ -49,6 +49,8 @@ div#conteudo {
     text-align: justify;
     margin-top: 60px;
     background: white;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
 }
 
@@ -67,10 +69,11 @@ div#conteudo section.parteTexto {
 div#conteudo section.parteTexto h1 {
     font-size: 2em;
     margin-top: 0;
+    text-align: left;
 }
 
 div#conteudo section.parteTexto img.exemplo {
-    width: 20%;
+    width: 200px;
     float: right;
     margin-top: -100px;
 }
@@ -101,12 +104,36 @@ div#conteudo section#combustao {
     color: #f8f8f8;
 }
 
+/*Sessão onde fica escritor e a data da postagem*/
+
+div#conteudo section#post {
+    background: rgb(30, 30, 30);
+    color: #f8f8f8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div#conteudo section#post div#autor {display: inline-block;}
+
+div#conteudo section#post div#autor img {
+    height: 3em;
+    border-radius: 100%;
+}
+
+div#conteudo section#post div#autor span {
+    vertical-align: 1em;
+}
+
+div#conteudo section#post div#data {
+    float: right;
+    margin-top: 1em;
+}
+
 /*Multimídia*/
 
 aside#multimidia {
     float: right;
     width: calc(40% - 101px);
-    background: rgb(30, 30, 30);
     vertical-align: top;
 }
 
@@ -119,16 +146,11 @@ aside#multimidia figure img, aside#multimidia figure iframe {
 aside#multimidia figure iframe {height: calc(25vw - 100px);}
 
 aside#multimidia figure legend {
-    color: rgba(0,0,0,0);
-    background: rgba(0,0,0,0);
+    color: #f8f8f8;
+    background: black;
     margin-top: -5px;
     padding: 10px 5px;
     user-select: none;
-}
-
-aside#multimidia figure img:hover ~ legend, aside#multimidia figure iframe:hover ~ legend {
-    color: #f8f8f8;
-    background: black;
 }
 
 /*Rodapé*/
