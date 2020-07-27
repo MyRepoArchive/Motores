@@ -1,0 +1,14 @@
+@media (max-width: 1000px) {
+    aside#multimidia figure iframe {height: calc(28vw - 100px);}
+}
+
+@media (max-width: 750px) {
+    div#conteudo section.parteTexto {
+        border: none;
+        width: 100%;
+    }
+
+    div#conteudo section.parteTexto figure {display: block;}
+    
+    aside#multimidia {display: none;}
+}

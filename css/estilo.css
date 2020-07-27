@@ -29,10 +29,11 @@ header#cabecalho div#linksCabecalho a {text-decoration: none; display: inline-bl
 header#cabecalho div#linksCabecalho div {
     color: #f8f8f8;
     display: inline-block;
-    margin: 5px;
+    margin: 6px 3px;
     border: 2px solid #f8f8f8;
     border-radius: 50px;
     padding: 3px 8px;
+    font-size: 0.8em;
 }
 
 header#cabecalho div#linksCabecalho div:hover {
@@ -45,15 +46,95 @@ header#cabecalho div#linksCabecalho div:hover {
 
 div#conteudo {
     max-width: 2000px;
-    display: inline-block;
     text-align: justify;
     margin-top: 60px;
     background: white;
-    padding: 10px 50px;
+    display: flex;
+}
+
+/*Artigo Geral*/
+
+div#conteudo div#texto {
+    display: inline-block;
+    flex-basis: calc(60% + 100px);
+    border-right: 1px solid #999999;
+}
+
+div#conteudo section.parteTexto {
+    padding: 50px;
+}
+
+div#conteudo section.parteTexto h1 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+div#conteudo section.parteTexto img.exemplo {
+    width: 20%;
+    float: right;
+    margin-top: -100px;
+}
+
+div#conteudo section.parteTexto figure {margin: 0; display: none;}
+
+div#conteudo section.parteTexto figure img {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+div#conteudo section.parteTexto figure legend {
+    text-align: center;
 }
 
 /*Introdução*/
 
 div#conteudo section#introducao {
     background: white;
+}
+
+/*Motor a combustão*/
+
+div#conteudo section#combustao {
+    background: rgb(35, 137, 255);
+    color: #f8f8f8;
+}
+
+/*Multimídia*/
+
+aside#multimidia {
+    float: right;
+    width: calc(40% - 101px);
+    background: rgb(30, 30, 30);
+    vertical-align: top;
+}
+
+aside#multimidia figure {margin: 0;}
+
+aside#multimidia figure img, aside#multimidia figure iframe {
+    width: 100%;
+}
+
+aside#multimidia figure iframe {height: calc(25vw - 100px);}
+
+aside#multimidia figure legend {
+    color: rgba(0,0,0,0);
+    background: rgba(0,0,0,0);
+    margin-top: -5px;
+    padding: 10px 5px;
+    user-select: none;
+}
+
+aside#multimidia figure img:hover ~ legend, aside#multimidia figure iframe:hover ~ legend {
+    color: #f8f8f8;
+    background: black;
+}
+
+/*Rodapé*/
+
+footer#rodape {
+    background: black;
+    margin-top: -1em;
+    color: #f8f8f8;
 }
