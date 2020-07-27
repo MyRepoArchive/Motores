@@ -9,7 +9,7 @@
 @media (max-width: 750px) {
     div#conteudo div#texto {
         border: none;
-        width: 100%;
+        flex-basis: 100%;
     }
 
     div#conteudo section.parteTexto figure {display: block;}
